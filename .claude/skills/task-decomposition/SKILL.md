@@ -20,6 +20,7 @@ Mục tiêu duy nhất: biến 1 yêu cầu phức tạp thành tập **nhỏ nh
 1. Xác định outcome cuối cùng + tiêu chí nghiệm thu (cái gì đo được khi xong).
 2. Trích requirements, constraints显式; liệt kê unknowns cần investigation.
 3. Tách thành tasks, mỗi task định nghĩa:
+   - Role (PROPOSE / CRITIQUE / MERGE / IMPLEMENT + round)
    - Objective (1 câu, động từ hành động)
    - Scope (file/module chạm vào + explicitly out-of-scope)
    - Context liên quan (file, quyết định trước — không forward cả conversation)
@@ -28,6 +29,7 @@ Mục tiêu duy nhất: biến 1 yêu cầu phức tạp thành tập **nhỏ nh
    - Verification (chạy test/lệnh gì để chứng minh xong)
 4. Xóa task trùng lặp hoặc không có mục đích cụ thể.
 5. Sắp xếp thứ tự thực thi, đánh dấu cặp nào chạy song song được (không overlap file ghi).
+6. Non-trivial: schedule debate TRƯỚC mọi IMPLEMENT task — 2 PROPOSE (angles minimal vs thorough), 1 vòng cross-CRITIQUE, 1 MERGE ra single final plan. Không implement trước khi có final plan.
 
 ## Anti-pattern
 
